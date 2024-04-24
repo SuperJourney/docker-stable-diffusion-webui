@@ -16,8 +16,6 @@ services:
               - driver: nvidia
                 device_ids: ['0']
                 capabilities: [compute, utility]
-    environment:
-      - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api
 
   download:
     build:
